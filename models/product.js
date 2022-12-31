@@ -1,15 +1,11 @@
 const mongoose=require("mongoose");
 
 const productSchema=new mongoose.Schema({
-    p_id:{
-        type:Number,
-        required:true
-    },
-    p_name:{
+    Pname:{
         type:String,
         required:true
     },
-    seller_name:{
+    Brand:{
         type:String,
         required:true
     },
@@ -17,6 +13,7 @@ const productSchema=new mongoose.Schema({
         type:Number,
         required:true
     }
-});
+}, {timestamps:true});
+
 const Product=mongoose.model("Product",productSchema);
 module.exports=Product;

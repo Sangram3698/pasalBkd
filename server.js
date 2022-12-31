@@ -11,8 +11,9 @@ app.use(cors());
 app.use(bodyParser.urlencoded({extended:true}));
 
 
-// /Routes
-app.use("/api",require("./routes/UserRoute"));
+// /Routes of user model
+app.use("/user",require("./routes/UserRoute"));
+app.use("/product", require("./routes/productRoute"));
 
 //connecting database
 connection();
@@ -20,7 +21,7 @@ connection();
 
 
 app.listen(3000,()=>{
-    console.log("http://localhost:3000");
+    console.log("\n\n-------> http://localhost:3000\n\n-----------");
 });
 
 
