@@ -27,6 +27,8 @@ const getUsers=async(req,res)=>{
 }
 
 
+/* 
+// Due to registeration user creation
 const postUser= async (req,res)=>{  
 
         try{
@@ -52,7 +54,7 @@ const putUser=async(req,res)=>{
            res.status(404).json({error: error.message});
            console.log("---bk---: putUser () error !!");
         } 
-}
+}*/
 
 const deleteUser=async(req,res)=>{
     try{
@@ -64,7 +66,7 @@ const deleteUser=async(req,res)=>{
     }
 }
 
-module.exports={getUsers,getUser,postUser,putUser,deleteUser};
+module.exports={getUsers,getUser,deleteUser};
 
 
 // ---------------- version 2.0 features -----------------------

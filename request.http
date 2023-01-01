@@ -1,0 +1,9 @@
+###
+POST http://localhost:6969/user
+
+
+{
+  "firstName":"Mahesh",
+  "lastName":"Bogati"
+
+}
